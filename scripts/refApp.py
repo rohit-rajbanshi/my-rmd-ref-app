@@ -391,7 +391,7 @@ def deployReferenceAppCreateDataseed(config):
 
 		data = [('username' , config.rmdAdmin1), ('password' , config.rmdAdmin1Pass)]
 
-		files = [('file', 'AssetData.xls', './data-seed-service/src/main/resources/rmdapp/AssetData.xls')]
+		files = [('file', 'AssetData.json', './data-seed-service/src/main/resources/rmdapp/AssetData.json')]
 
 		#calling data loading on dataseedURl
 		output= uploadFileToDataseed(config.DATA_SEED_URL, data, files)
